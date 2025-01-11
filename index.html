@@ -21,48 +21,38 @@
             transition: background-color 0.3s, color 0.3s;
         }
 
-        body.dark {
-            background-color: #121212;
-            color: #d1d1d1;
-        }
-
         header {
-            background-color: #fff;
+            background-color: #007bff;
             padding: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 2px solid #ddd;
+            border-bottom: 2px solid #0056b3;
             position: sticky;
             top: 0;
             z-index: 1000;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        header.dark {
-            background-color: #1f1f1f;
-            border-bottom: 2px solid #444;
-        }
-
-        nav ul {
+        header nav ul {
             list-style: none;
             display: flex;
             gap: 25px;
         }
 
-        nav ul li button {
+        header nav ul li button {
             background: none;
             border: none;
             cursor: pointer;
             font-size: 16px;
             padding: 10px 20px;
             border-radius: 5px;
+            color: white;
             transition: background-color 0.3s, color 0.3s;
         }
 
-        nav ul li button:hover {
-            background-color: #007bff;
-            color: #fff;
+        header nav ul li button:hover {
+            background-color: #0056b3;
         }
 
         .container {
@@ -72,7 +62,7 @@
         }
 
         .card {
-            background-color: #fff;
+            background-color: white;
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             margin-bottom: 30px;
@@ -85,13 +75,10 @@
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
         }
 
-        .dark .card {
-            background-color: #1e1e1e;
-        }
-
         h2 {
             margin-bottom: 15px;
             color: #007bff;
+            font-family: 'Georgia', serif;
         }
 
         .skills-bar {
@@ -124,21 +111,13 @@
             transition: width 0.3s;
         }
 
-        .dark .bar-container::after {
-            background-color: #007bff;
-        }
-
         footer {
             text-align: center;
             padding: 20px;
             margin-top: 40px;
-            background-color: #f4f6f9;
-            border-top: 1px solid #ddd;
-        }
-
-        .dark footer {
-            background-color: #1f1f1f;
-            border-top: 1px solid #444;
+            background-color: #007bff;
+            border-top: 2px solid #0056b3;
+            color: white;
         }
 
         footer p {
@@ -147,7 +126,7 @@
 
         /* Responsive Styles */
         @media (max-width: 768px) {
-            nav ul {
+            header nav ul {
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 15px;
@@ -261,3 +240,4 @@
 </body>
 
 </html>
+
